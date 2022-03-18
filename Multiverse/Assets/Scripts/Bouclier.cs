@@ -19,7 +19,7 @@ public class Bouclier : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Select");
+        var activate = actionAsset.FindActionMap("XRI LeftHand").FindAction("Activate");
         activate.Enable();
         activate.performed += ShieldActivate;
 
