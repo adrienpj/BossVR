@@ -9,7 +9,8 @@ public class Explosion : MonoBehaviour
     public GameObject fireball;
     [SerializeField] private Collision collision;
     public GameObject explosionVFX;
-    
+    //public BossHealth bossHealth;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -27,5 +28,8 @@ public class Explosion : MonoBehaviour
         GameObject expl = Instantiate(explosionVFX, transform.position, Quaternion.identity) as GameObject;
         Destroy(fireball);
         Destroy(expl, 1);
+
+        //bossHealth.Damage(15);
+
     }
 }
