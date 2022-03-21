@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 7200324435674195505}
   - component: {fileID: 7200324435674195510}
   - component: {fileID: 1614169042501311892}
-  - component: {fileID: -8266619295019402513}
   m_Layer: 0
   m_Name: Fireball
   m_TagString: Untagged
@@ -129,22 +128,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireball: {fileID: 7200324435674195508}
   explosionVFX: {fileID: 100002, guid: f7efb0d9df2264096af57128df85dddb, type: 3}
-  bossHealth: {fileID: 0}
---- !u!114 &-8266619295019402513
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7200324435674195508}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb7a512a97c0809429d834c432bf52c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 75
-  maxHealth: 100
-  BossHealthBarImage: {fileID: 4977088458958313246, guid: 16cb0089b3d5cc24484895d9c11e7dfe, type: 3}
+  bossHealth: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
 --- !u!1 &7200324435947503529
 GameObject:
   m_ObjectHideFlags: 0

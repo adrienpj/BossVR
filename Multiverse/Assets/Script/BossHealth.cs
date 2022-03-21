@@ -10,9 +10,6 @@ public class BossHealth : MonoBehaviour
     public float maxHealth = 100f;
 
     public Image BossHealthBarImage;
-
-    [SerializeField] private Collision collision;
-    
     
 
     // Update is called once per frame
@@ -23,11 +20,7 @@ public class BossHealth : MonoBehaviour
         health = Mathf.Clamp(health, 0f, maxHealth);
     }
     
-    void OnCollisionEnter()
-    {
-        Damage(15);
-
-    }
+ 
     
     public void Damage(int damageAmount)
     {
