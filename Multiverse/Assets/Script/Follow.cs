@@ -15,6 +15,6 @@ public class Follow : MonoBehaviour
     {
         Vector3 dir = target.position - transform.position;
 
-        transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.LookRotation(dir), 1* Time.deltaTime);
+        transform.localRotation = Quaternion.Slerp(transform.localRotation, Quaternion.LookRotation(dir), Time.deltaTime/4);
     }
 }
