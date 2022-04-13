@@ -3251,6 +3251,59 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f3195ea07eb8bd47aecdf3bde2a1cab, type: 3}
+--- !u!1 &1711092607
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1711092608}
+  - component: {fileID: 1711092609}
+  m_Layer: 0
+  m_Name: Fireball
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1711092608
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711092607}
+  m_LocalRotation: {x: 0.029884255, y: 0.0012527836, z: -0.041865665, w: 0.99867547}
+  m_LocalPosition: {x: -0.0009, y: 0.1386, z: 0.2939}
+  m_LocalScale: {x: 0.020000001, y: 0.02, z: 0.020000003}
+  m_Children: []
+  m_Father: {fileID: 1990977024}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 3.428, y: 0, z: -4.801}
+--- !u!114 &1711092609
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1711092607}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97725b7876933b4438938a139851b924, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyTime: 5
+  target: {fileID: 578206862}
+  boss: {fileID: 1990977024}
+  player: {fileID: 578206862}
+  timeBetweenAttacks: 5
+  projectile: {fileID: 7200324435674195508, guid: 7c77096a9031f5d429207aaf319c8e6e, type: 3}
+  sightRange: 500
+  attackRange: 500
+  playerInSightRange: 1
+  playerInAttackRange: 1
 --- !u!1 &1828721553
 GameObject:
   m_ObjectHideFlags: 0
@@ -3516,29 +3569,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ab0d6ddb06572824898de2a51dd53da8, type: 3}
   m_PrefabInstance: {fileID: 6247397}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1990977025
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1990977020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97725b7876933b4438938a139851b924, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 578206862}
-  burst: 1
-  boss: {fileID: 1990977024}
-  player: {fileID: 578206862}
-  newPosition: {x: 0, y: 0, z: 0}
-  timeBetweenAttacks: 5
-  projectile: {fileID: 7200324435674195508, guid: 7c77096a9031f5d429207aaf319c8e6e, type: 3}
-  sightRange: 500
-  attackRange: 500
-  playerInSightRange: 1
-  playerInAttackRange: 1
 --- !u!1 &2081963651
 GameObject:
   m_ObjectHideFlags: 0

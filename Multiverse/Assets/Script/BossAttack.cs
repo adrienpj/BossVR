@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class BossAttack : MonoBehaviour
 {
-    //[SerializeField] float destroyTime = 5;
+    [SerializeField] float destroyTime = 5;
     public Transform target;
-    public float burst = 350f;
     public Transform boss;
     public Transform player;
-    public Vector3 newPosition;
+
 
     //Attacking
     public float timeBetweenAttacks;
@@ -47,14 +46,12 @@ public class BossAttack : MonoBehaviour
     {
         if (!alreadyAttacked)
         {
-            //Vector3 newPosition = new Vector3(transform.position.x - 14, transform.position.y + 11, transform.position.z);
-            Vector3 newPosition = new Vector3(boss.transform.position.x - 14, boss.transform.position.y + 11, boss.transform.position.z * 2);
             ///Attaque code ici
-            //Rigidbody rb = Instantiate(projectile, new Vector3(-14, 25, 0), Quaternion.identity).GetComponent<Rigidbody>();
-            Rigidbody fireball = Instantiate(projectile, newPosition, Quaternion.identity).GetComponent<Rigidbody>();
-            fireball.AddForce(transform.forward * 15f, ForceMode.Impulse);
-            fireball.AddForce(transform.up * -5.5f, ForceMode.Impulse);
-            //Destroy(fireball.GetComponent<Rigidbody>(),destroyTime);
+            Rigidbody fireball = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            fireball.AddForce(transform.forward * 15f, ForceMode.Impulse );
+            fireball.AddForce(transform.up * -3f, ForceMode.Impulse);
+            
+            Destroy(fireball.GetComponent<Rigidbody>(),destroyTime);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
