@@ -49,7 +49,7 @@ public class BossAttack : MonoBehaviour
             ///Attaque code ici
             Rigidbody fireball = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             fireball.AddForce(transform.forward * 15f, ForceMode.Impulse );
-            fireball.AddForce(transform.up * -3f, ForceMode.Impulse);
+            fireball.AddForce(transform.up * -2.5f, ForceMode.Impulse);
             
             Destroy(fireball.GetComponent<Rigidbody>(),destroyTime);
 
