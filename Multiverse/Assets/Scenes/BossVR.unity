@@ -3261,7 +3261,7 @@ GameObject:
   - component: {fileID: 1711092608}
   - component: {fileID: 1711092609}
   m_Layer: 0
-  m_Name: Fireball
+  m_Name: Waterball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3298,7 +3298,7 @@ MonoBehaviour:
   boss: {fileID: 1990977024}
   player: {fileID: 578206862}
   timeBetweenAttacks: 5
-  projectile: {fileID: 7200324435674195508, guid: 7c77096a9031f5d429207aaf319c8e6e, type: 3}
+  projectile: {fileID: 7100386694359570410, guid: 020d89c03ebceb34b8be90123f1efa76, type: 3}
   sightRange: 500
   attackRange: 500
   playerInSightRange: 1
