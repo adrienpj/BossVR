@@ -28,16 +28,21 @@ public class Explosion : MonoBehaviour
         
     }
 
-      void OnCollisionEnter()
+    void OnCollisionEnter(Collision col)
     {
         GameObject expl = Instantiate(explosionVFX, transform.position, Quaternion.identity) as GameObject;
         Destroy(fireball);
         Destroy(expl, 1);
 
+        if (col.gameObject.tag == "Boss")
+        {
+            bossHealth.Damage(5);
+        }
+        
     }
 
     private void OnDestroy()
     {
-        bossHealth.Damage(15);
+        //bossHealth.Damage(5);
     }
 }
