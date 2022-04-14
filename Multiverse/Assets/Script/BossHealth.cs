@@ -16,11 +16,14 @@ public class BossHealth : MonoBehaviour
     public int tmp = 0;
     public GameObject message1;
     public GameObject fireworks;
+
+    public GameObject GameOverScreen;
     
     // Start is called before the first frame update
     void Start()
     {
         message1.gameObject.SetActive(false);
+        GameOverScreen.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -82,7 +85,7 @@ public class BossHealth : MonoBehaviour
             message1.gameObject.SetActive(true);
             Vector3 position = new Vector3(0f, 17f, 0f);
             VictoryAnimation(position);
-            
+            GameOverScreen.gameObject.SetActive(true);
         }
     }
 }
