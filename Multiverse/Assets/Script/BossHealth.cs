@@ -32,7 +32,7 @@ public class BossHealth : MonoBehaviour
         
         if(health <= 0 && tmp == 0)
         {
-            Vector3 position = new Vector3(0f, 17f, 0f);
+            Vector3 position = new Vector3(0f, 20f, 0f);
             boss.gameObject.SetActive(false);
             BossHealthBar.gameObject.SetActive(false);
             BossHealthBarBackground.gameObject.SetActive(false);

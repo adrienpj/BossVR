@@ -1122,7 +1122,7 @@ PrefabInstance:
     - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
       propertyPath: defeatAnime
       value: 
-      objectReference: {fileID: 6741044259612787043, guid: 63c1d6bca3d140b43a44e2939b53058d, type: 3}
+      objectReference: {fileID: 8038344524183138613, guid: 0277167a12290af47801444830a2be97, type: 3}
     - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
       propertyPath: BossHealthBar
       value: 
