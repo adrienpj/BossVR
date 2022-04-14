@@ -14,13 +14,13 @@ public class BossHealth : MonoBehaviour
     public GameObject BossHealthBarBackground;
     public Image BossHealthBarImage;
     public int tmp = 0;
-    //public GameObject message1;
+    public GameObject message1;
     public GameObject fireworks;
     
     // Start is called before the first frame update
     void Start()
     {
-        //message1.gameObject.SetActive(false);
+        message1.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -79,7 +79,7 @@ public class BossHealth : MonoBehaviour
     {
         if(flag == "Victoire")
         {
-            //message1.gameObject.SetActive(true);
+            message1.gameObject.SetActive(true);
             Vector3 position = new Vector3(0f, 17f, 0f);
             VictoryAnimation(position);
             
