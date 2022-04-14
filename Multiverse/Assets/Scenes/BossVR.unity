@@ -1103,13 +1103,33 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
+      propertyPath: boss
+      value: 
+      objectReference: {fileID: 1990977020}
+    - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
       propertyPath: health
       value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
+      propertyPath: fireworks
+      value: 
+      objectReference: {fileID: 100002, guid: f7efb0d9df2264096af57128df85dddb, type: 3}
+    - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
+      propertyPath: defeatAnime
+      value: 
+      objectReference: {fileID: 100002, guid: f7efb0d9df2264096af57128df85dddb, type: 3}
+    - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
+      propertyPath: BossHealthBar
+      value: 
+      objectReference: {fileID: 735512251}
+    - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
       propertyPath: BossHealthBarImage
       value: 
       objectReference: {fileID: 1971348988}
+    - target: {fileID: 3421649718300659682, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
+      propertyPath: BossHealthBarBackground
+      value: 
+      objectReference: {fileID: 114479411}
     - target: {fileID: 3421649718300659683, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -1160,6 +1180,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 067f4f3471d73e14cb053bec6610953e, type: 3}
+--- !u!1 &735512251 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3621820110159626203, guid: c8a27b888822c7c46a734aff6efaab76, type: 3}
+  m_PrefabInstance: {fileID: 3621820108372859425}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &835503141
 GameObject:
   m_ObjectHideFlags: 0
@@ -3474,7 +3499,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3621820110159626205, guid: c8a27b888822c7c46a734aff6efaab76, type: 3}
   m_PrefabInstance: {fileID: 3621820108372859425}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 735512251}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
