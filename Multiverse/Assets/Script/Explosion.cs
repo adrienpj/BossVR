@@ -10,6 +10,7 @@ public class Explosion : MonoBehaviour
     [SerializeField] private Collision collision;
     public GameObject explosionVFX;
     BossHealth bossHealth;
+    PlayerHealth playerHealth;
 
     // Start is called before the first frame update
     void Awake()
@@ -20,6 +21,7 @@ public class Explosion : MonoBehaviour
     void Start()
     {
         bossHealth = FindObjectOfType<BossHealth>();
+        playerHealth = FindObjectOfType<PlayerHealth>();
     }
 
     // Update is called once per frame
@@ -38,7 +40,11 @@ public class Explosion : MonoBehaviour
         {
             bossHealth.Damage(5);
         }
-        
+        if (col.gameObject.tag == "Player")
+        {
+            playerHealth.Damage(15);
+            
+        }
     }
 
     private void OnDestroy()

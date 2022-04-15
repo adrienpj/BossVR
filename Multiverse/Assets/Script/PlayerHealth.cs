@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
     public void Damage(int damageAmount)
     {
         health -= damageAmount;
+
     }
 
    
