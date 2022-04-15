@@ -221,8 +221,8 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 114479411}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0019073485}
   m_LocalScale: {x: 20, y: 7, z: 1}
   m_Children:
   - {fileID: 1971348987}
@@ -231,7 +231,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -4.82, y: 291.5}
+  m_AnchoredPosition: {x: -4.815816, y: 291.48514}
   m_SizeDelta: {x: 40, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114479413
@@ -548,9 +548,9 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 371760321}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.03, y: 0.03, z: 0.03}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0000000016298143, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 0.03, y: 0.03, z: 0.030000003}
   m_Children:
   - {fileID: 114479412}
   - {fileID: 2109945916}
@@ -559,7 +559,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 23.86}
+  m_AnchoredPosition: {x: -1, y: 22.9}
   m_SizeDelta: {x: 1294, y: 634}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &371760326
@@ -1674,7 +1674,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -350, y: -167}
+  m_AnchoredPosition: {x: -1, y: -196}
   m_SizeDelta: {x: 40, y: 3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &958673202
@@ -3416,7 +3416,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1315401805
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3446,7 +3446,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1315401804}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -3961,7 +3961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711092607}
   m_LocalRotation: {x: 0.029884255, y: 0.0012527836, z: -0.041865665, w: 0.99867547}
-  m_LocalPosition: {x: -0.0009, y: 0.1386, z: 0.2939}
+  m_LocalPosition: {x: -0.003, y: 0.116, z: 0.293}
   m_LocalScale: {x: 0.020000001, y: 0.02, z: 0.020000003}
   m_Children: []
   m_Father: {fileID: 1990977024}
@@ -3984,7 +3984,7 @@ MonoBehaviour:
   boss: {fileID: 1990977024}
   player: {fileID: 578206862}
   timeBetweenAttacks: 5
-  projectile: {fileID: 7100386694359570410, guid: 020d89c03ebceb34b8be90123f1efa76, type: 3}
+  projectile: {fileID: 4536452560951516215, guid: 020d89c03ebceb34b8be90123f1efa76, type: 3}
   sightRange: 500
   attackRange: 500
   playerInSightRange: 1
