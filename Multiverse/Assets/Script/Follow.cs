@@ -14,21 +14,18 @@ public class Follow : MonoBehaviour
 
     public Transform target;
     bool enableAct;
-    public int act = 1;
+    public int act;
 
     void Start()
     {
-        int act = 1;
         enableAct = true;
-
     }
+
     void Update()
     {   
-        //BossBoundaries();
         RotateBoss();
-        if(enableAct)
+        if(enableAct == true)
         {
-            //Debug.Log("start");
             TranslateBoss(act);
         } 
         else if(enableAct == false)
@@ -50,33 +47,33 @@ public class Follow : MonoBehaviour
     {   
         if(act == 1)
         {
-            if(transform.position.z >= _rightBoundary)
-            {
-                //FreezeBoss();
-            
-            }else if (transform.position.z <= _rightBoundary)
+            if(transform.position.z <= _rightBoundary)
             {
                 Debug.Log("déplacement à droite");
                 transform.Translate(Vector3.right * bossSpeed * Time.deltaTime, Space.Self);
-                BossBoundaries();   
+                
             }
+            else if(transform.position.z >= _rightBoundary)
+            {
+                FreezeBoss();
+            } 
+              
         }
-        
         
         else if(act == 2)
         {
-            if(transform.position.z <= _leftBoundary)
+            if (transform.position.y <= _upBoundary)
             {
-                //FreezeBoss();
-            
-            }else if (transform.position.z >= _leftBoundary)
+                Debug.Log("déplacement à haut");
+                transform.Translate(Vector3.up * bossSpeed * Time.deltaTime, Space.Self);
+                
+            }
+            else if(transform.position.y >= _upBoundary)
             {
-                Debug.Log("déplacement à gauche");
-                transform.Translate(Vector3.left * bossSpeed * Time.deltaTime, Space.Self);
-                BossBoundaries();   
+                FreezeBoss();
             }
         }
-
+        /*
         else if(act == 3)
         {
             transform.Translate(Vector3.up * bossSpeed * Time.deltaTime, Space.Self);
@@ -87,6 +84,7 @@ public class Follow : MonoBehaviour
             transform.Translate(Vector3.down * bossSpeed * Time.deltaTime, Space.Self);
             BossBoundaries();
         }
+        */
     }
 
     //Méthode de vérification de la limite de zone
@@ -120,8 +118,8 @@ public class Follow : MonoBehaviour
     void UnFreezeBoss()
     {
         enableAct = true;
-        //int act = Random.Range(1, 4);
-        int act = 2;
+        int act = Random.Range(1, 4);
+        //int act = 2;
         Debug.Log(act);
     }
 

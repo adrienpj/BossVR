@@ -10,7 +10,8 @@ public class GameOverMenu : MonoBehaviour
     [SerializeField] private InputActionAsset actionAsset;
 
     void Update()
-    {
+    {   
+        /*
         //Bouton A
         var buttonA = actionAsset.FindActionMap("XRI RightHand").FindAction("Teleport Select");
         buttonA.Enable();
@@ -20,9 +21,20 @@ public class GameOverMenu : MonoBehaviour
         var buttonB = actionAsset.FindActionMap("XRI LeftHand").FindAction("Teleport Select");
         buttonB.Enable();
         buttonB.performed += MenuButton;
-
+        */
     }
 
+    public void ResrartRaycast()
+    {
+        SceneManager.LoadScene("BossVR");
+    }
+
+    public void MenuButton()
+    {
+        
+    }
+
+    /*
     public void ResrartButton(InputAction.CallbackContext context)
     {
         SceneManager.LoadScene("BossVR");
@@ -32,5 +44,5 @@ public class GameOverMenu : MonoBehaviour
     {
         
     }
-
+    */
 }
