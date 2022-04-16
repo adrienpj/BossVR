@@ -1033,7 +1033,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 578206859}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -40, y: 20, z: -0}
+  m_LocalPosition: {x: -40, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1828721554}
@@ -1052,7 +1052,7 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.6
+  m_Radius: 0.42
   m_Height: 3
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
@@ -4324,6 +4324,22 @@ PrefabInstance:
     - target: {fileID: 2288077332362485264, guid: 6ca6fab39c77a5a41acc19d3f89ec72d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292497557253832591, guid: 6ca6fab39c77a5a41acc19d3f89ec72d, type: 3}
+      propertyPath: m_Size.x
+      value: 2.23
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292497557253832591, guid: 6ca6fab39c77a5a41acc19d3f89ec72d, type: 3}
+      propertyPath: m_Size.y
+      value: 3.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292497557253832591, guid: 6ca6fab39c77a5a41acc19d3f89ec72d, type: 3}
+      propertyPath: m_Size.z
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 2292497557253832591, guid: 6ca6fab39c77a5a41acc19d3f89ec72d, type: 3}
+      propertyPath: m_Center.z
+      value: 1.39
       objectReference: {fileID: 0}
     - target: {fileID: 2294184536724155600, guid: 6ca6fab39c77a5a41acc19d3f89ec72d, type: 3}
       propertyPath: m_Name
