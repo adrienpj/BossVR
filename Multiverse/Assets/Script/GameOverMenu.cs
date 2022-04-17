@@ -21,7 +21,7 @@ public class GameOverMenu : MonoBehaviour
 
     public void MenuButton()
     {
-        
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
