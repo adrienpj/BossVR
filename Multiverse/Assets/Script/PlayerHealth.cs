@@ -6,7 +6,7 @@ using TMPro;
 
 public class PlayerHealth : MonoBehaviour
 {
-    public float health = 75f;
+    public float health = 100f;
     public float maxHealth = 100f;
     public int tmp = 0;
 

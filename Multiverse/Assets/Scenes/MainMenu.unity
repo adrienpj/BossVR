@@ -363,6 +363,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionAsset: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   shield: {fileID: 1431773079}
+  LeftHand: {fileID: 0}
 --- !u!114 &235464231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2284,7 +2285,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812679173}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0.2, z: -0}
+  m_LocalPosition: {x: 0, y: 0.5, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1242075742}
@@ -3168,7 +3169,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 052821051301bb849ab0e4f50ad32d10, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3388,8 +3389,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\nTir \ngachette droite\n\nBouclier \ngachette gauche\n\nTeleportation
-    \nviser le haut d'une tour\ngachette basse\n\n"
+  m_Text: "\nTuer le dragon le plus vite posible ! \n\nTir \ntrigger droit\n\nBouclier
+    \ntrigger gauche\n\nTeleportation \nviser le haut d'une tour\ngrip droit/gauche\n\n"
 --- !u!222 &1336817311
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4232,7 +4233,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\n\n\nChlo\xE9 Marc\xE9\nOlivier Chen\nAdrien Chahinian"
+  m_Text: "\n\n\nChlo\xE9 Marc\xE9\n\nOlivier Chen\n\nAdrien Chahinian"
 --- !u!222 &1587383828
 CanvasRenderer:
   m_ObjectHideFlags: 0

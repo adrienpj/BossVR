@@ -7,7 +7,7 @@ using System;
 
 public class BossHealth : MonoBehaviour
 {
-    public float health = 75f;
+    public float health = 100f;
     public float maxHealth = 100f;
     public GameObject text;
     public GameObject boss;
