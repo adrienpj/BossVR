@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System;
 
 public class BossHealth : MonoBehaviour
 {
@@ -91,7 +92,7 @@ public class BossHealth : MonoBehaviour
             VictoryAnimation(position);
             victoireCanvas.gameObject.SetActive(true);
             text.GetComponent<Timer>().toogle_alive();
-            message2.GetComponent<Text>().text = "you won in : " + text.GetComponent<Timer>().get_time().ToString();
+            message2.GetComponent<Text>().text = "you won in : " + Math.Round((text.GetComponent<Timer>().get_time() / 60), 2).ToString() + " minutes";
             
         }
     }
