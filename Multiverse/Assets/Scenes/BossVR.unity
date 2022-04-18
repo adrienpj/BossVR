@@ -136,7 +136,6 @@ GameObject:
   - component: {fileID: 391475}
   - component: {fileID: 391474}
   - component: {fileID: 391473}
-  - component: {fileID: 391472}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -164,19 +163,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 1.02}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &391472
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 391470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99cb236a52c3cf246a815ac8b44b152d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camTransform: {fileID: 963194228}
 --- !u!114 &391473
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1018,17 +1004,17 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 413655883}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 10.38}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10.380002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1083531107}
-  m_Father: {fileID: 578206862}
-  m_RootOrder: 2
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: -1.05}
+  m_AnchoredPosition: {x: 0, y: -1.05}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &477431931
@@ -1250,8 +1236,6 @@ Transform:
   m_Children:
   - {fileID: 1828721554}
   - {fileID: 623975887}
-  - {fileID: 413655888}
-  - {fileID: 1581922751}
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
@@ -2299,6 +2283,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 320066229}
+  - {fileID: 413655888}
+  - {fileID: 1581922751}
   m_Father: {fileID: 1828721554}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3551,7 +3537,6 @@ GameObject:
   - component: {fileID: 1083531111}
   - component: {fileID: 1083531110}
   - component: {fileID: 1083531109}
-  - component: {fileID: 1083531108}
   m_Layer: 5
   m_Name: MenuButton
   m_TagString: Untagged
@@ -3576,22 +3561,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1.19}
+  m_AnchoredPosition: {x: 0, y: -4.69}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1083531108
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1083531106}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99cb236a52c3cf246a815ac8b44b152d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camTransform: {fileID: 963194228}
 --- !u!114 &1083531109
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3712,7 +3684,6 @@ GameObject:
   - component: {fileID: 1179170366}
   - component: {fileID: 1179170365}
   - component: {fileID: 1179170364}
-  - component: {fileID: 1179170363}
   m_Layer: 5
   m_Name: RestartButton
   m_TagString: Untagged
@@ -3740,19 +3711,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 3.590001}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1179170363
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1179170361}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99cb236a52c3cf246a815ac8b44b152d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camTransform: {fileID: 963194228}
 --- !u!114 &1179170364
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4239,7 +4197,6 @@ GameObject:
   - component: {fileID: 1473597144}
   - component: {fileID: 1473597147}
   - component: {fileID: 1473597146}
-  - component: {fileID: 1473597145}
   m_Layer: 5
   m_Name: GameOver
   m_TagString: Untagged
@@ -4255,7 +4212,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1473597143}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.000015258789}
+  m_LocalPosition: {x: 0, y: 0, z: 68.3}
   m_LocalScale: {x: 0.24056257, y: 0.24056262, z: 0.24056257}
   m_Children: []
   m_Father: {fileID: 1581922751}
@@ -4263,22 +4220,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 89.620026, y: 48.593628}
+  m_AnchoredPosition: {x: 1.4, y: 20.7}
   m_SizeDelta: {x: 320, y: 70}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1473597145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1473597143}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99cb236a52c3cf246a815ac8b44b152d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camTransform: {fileID: 963194228}
 --- !u!114 &1473597146
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4428,19 +4372,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1581922746}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 10.38}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 10.380002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1473597144}
   - {fileID: 1179170362}
   - {fileID: 391471}
-  m_Father: {fileID: 578206862}
-  m_RootOrder: 3
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -3.56}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1598282882
