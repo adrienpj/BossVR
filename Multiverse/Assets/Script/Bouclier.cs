@@ -8,6 +8,7 @@ public class Bouclier : MonoBehaviour
 {
     [SerializeField] private InputActionAsset actionAsset;
     [SerializeField] private GameObject shield;
+    [SerializeField] private GameObject LeftHand;
     
     
     // Start is called before the first frame update
@@ -31,6 +32,7 @@ public class Bouclier : MonoBehaviour
         if (shield.gameObject.activeSelf == false)
         {
             shield.gameObject.SetActive(true);
+            shield.transform.position = LeftHand.transform.position;
         }
         else
         {

@@ -49,6 +49,10 @@ public class Explosion : MonoBehaviour
             playerHealth.Damage(15);
 
         }
+        if (col.gameObject.tag == "Shield")
+        {
+            playerHealth.Damage(0);
+        }
     }
 
     private void OnDestroy()

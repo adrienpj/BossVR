@@ -43,8 +43,6 @@ public class BossHealth : MonoBehaviour
             BossHealthBar.gameObject.SetActive(false);
             BossHealthBarBackground.gameObject.SetActive(false);
             DefeatAnimation(position);
-            text.GetComponent<Timer>().toogle_alive();
-            message2.GetComponent<Text>().text = "you won in : " + text.GetComponent<Timer>().get_time().ToString();
             tmp = 1;
 
         }
@@ -92,6 +90,8 @@ public class BossHealth : MonoBehaviour
             Vector3 position = new Vector3(0f, 17f, 0f);
             VictoryAnimation(position);
             victoireCanvas.gameObject.SetActive(true);
+            text.GetComponent<Timer>().toogle_alive();
+            message2.GetComponent<Text>().text = "you won in : " + text.GetComponent<Timer>().get_time().ToString();
             
         }
     }
