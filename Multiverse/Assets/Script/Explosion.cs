@@ -27,7 +27,7 @@ public class Explosion : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void OnCollisionEnter(Collision col)
@@ -40,10 +40,14 @@ public class Explosion : MonoBehaviour
         {
             bossHealth.Damage(5);
         }
-        if (col.gameObject.tag == "Player")
+        if (col.gameObject.tag == "Shield")
+        {
+    
+        }
+        else if (col.gameObject.tag == "Player")
         {
             playerHealth.Damage(15);
-            
+
         }
     }
 
