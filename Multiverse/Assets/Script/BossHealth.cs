@@ -8,6 +8,7 @@ public class BossHealth : MonoBehaviour
 {
     public float health = 75f;
     public float maxHealth = 100f;
+    public GameObject text;
     public GameObject boss;
     public GameObject defeatAnime;
     public GameObject BossHealthBar;
@@ -15,6 +16,7 @@ public class BossHealth : MonoBehaviour
     public Image BossHealthBarImage;
     public int tmp = 0;
     public GameObject message1;
+    public GameObject message2;
     public GameObject fireworks;
     public GameObject victoireCanvas;
     
@@ -23,6 +25,8 @@ public class BossHealth : MonoBehaviour
     {
         message1.gameObject.SetActive(false);
         victoireCanvas.gameObject.SetActive(false);
+        message2.gameObject.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -39,6 +43,8 @@ public class BossHealth : MonoBehaviour
             BossHealthBar.gameObject.SetActive(false);
             BossHealthBarBackground.gameObject.SetActive(false);
             DefeatAnimation(position);
+            text.GetComponent<Timer>().toogle_alive();
+            message2.GetComponent<Text>().text = "you won in : " + text.GetComponent<Timer>().get_time().ToString();
             tmp = 1;
 
         }
@@ -82,6 +88,7 @@ public class BossHealth : MonoBehaviour
         if(flag == "Victoire")
         {
             message1.gameObject.SetActive(true);
+            message2.gameObject.SetActive(true);
             Vector3 position = new Vector3(0f, 17f, 0f);
             VictoryAnimation(position);
             victoireCanvas.gameObject.SetActive(true);

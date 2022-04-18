@@ -7,6 +7,8 @@ using System;
 public class Timer : MonoBehaviour
 {
     float time;
+    Boolean is_alive = true;
+    public GameObject text;
 
     // Start is called before the first frame update
     void Start()
@@ -17,8 +19,30 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = Math.Round((time / 60), 2).ToString() + " minutes";
+        if (is_alive)
+        {
+            GetComponent<Text>().text = Math.Round((time / 60), 2).ToString() + " minutes";
+            time = Time.time;
+        }
 
-        time = Time.time;
+        
+    }
+    
+    public void toogle_alive()
+    {
+        is_alive = !is_alive;
+        if (is_alive)
+        {
+            text.SetActive(true);
+        }
+        else
+        {
+            text.SetActive(false);
+        }
+    }
+
+    public float get_time()
+    {
+        return time;
     }
 }
